@@ -251,7 +251,7 @@ mounted from `istio.istio-galley-service-account` secret in the
 
     `istio-galley` 需对于 `validatingwebhookconfigurations` 写访问权以创建和更新 `istio-galley` `validatingwebhook`  配置。
 
-## 创建配置失败，提示 `no such hosts` or `no endpoints available` 错误 
+## 创建配置失败，提示 `no such hosts` or `no endpoints available` 错误
 
 验证是失败关闭的（fail-close）。如果 `istio-galley` pod 没有准备好，则无法创建和更新相关配置。这种情况下，会提示如下错误： `no such host` （Kubernetes 1.9） 或 `no endpoints available` （>=1.10）的错误。
 

@@ -57,9 +57,9 @@ weight: 30
     kube-public    Active    18d
     kube-system    Active    18d
     {{< /text >}}
-    
+
     不包含在注入范围的 `namespaceSelector` 如下所示：
-    
+
     {{< text bash >}}
     $ kubectl get mutatingwebhookconfiguration istio-sidecar-injector -o yaml | grep "namespaceSelector:" -A5
       namespaceSelector:
@@ -166,7 +166,7 @@ deployment.extensions "istio-sidecar-injector" patched
 
 ### 部署状态中出现 `no such hosts` 或 `no endpoints available` 错误
 
-注入是失效关闭的（faile-close）。如果 `istio-sidecar-injector` pod 尚未准备就绪，则无法创建 pod。在这种情况下，则会出现以下错误 `no such host` （Kubernetes 1.9） 或 `no endpoints available` （>=1.10）。
+注入是失效关闭的（fail-close）。如果 `istio-sidecar-injector` pod 尚未准备就绪，则无法创建 pod。在这种情况下，则会出现以下错误 `no such host` （Kubernetes 1.9） 或 `no endpoints available` （>=1.10）。
 
 Kubernetes 1.9:
 

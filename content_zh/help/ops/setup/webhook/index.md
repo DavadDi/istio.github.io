@@ -10,7 +10,7 @@ weight: 10
 
 Istio 使用 `ValidatingAdmissionWebhooks` 验证 Istio 配置，使用 `MutatingAdmissionWebhooks` 自动将 sidecar 代理注入至用户 pod。
 
-Webhook 设置指南基于 Kubernetes 动态准入 webhook 相关的知识。有关派生和验证 webhook 配置的详细文档，请参考 [Kubernetes API ](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.11/)。
+Webhook 设置指南基于 Kubernetes 动态准入 webhook 相关的知识。有关派生和验证 webhook 配置的详细文档，请参考 [Kubernetes API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.11/)。
 
 ## 验证动态准入 webhook 前置条件
 
